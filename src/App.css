@@ -1,3 +1,7 @@
+body{
+  height:90%;
+  width: 80%;
+}
 .App {
   text-align: center;
 }
@@ -27,6 +31,62 @@
 .App-link {
   color: #61dafb;
 }
+
+.appContainer{
+  border: solid 4px black;
+  height:550px ;
+  width: 70%;
+  display: flex;
+  justify-content:space-between;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.homePage{
+  border: solid 5px orange ;
+  height: auto;
+  width: 50%;
+}
+
+.employeePage{
+  border: solid 5px brown ;
+  height: auto;
+  width: 50%;
+}
+
+.employeeProfile{
+  border: solid 2px blue;
+  height: 40px;
+  width: 98%;
+  margin: auto;
+}
+
+.profilePic{
+  border: solid 1px grey;
+  display: flex;
+  justify-content: left;
+  margin: auto;
+  margin-top: 3%;
+  width: 90%;
+  height: 90px;
+  padding: 10px;
+}
+
+#img1{
+height: 80px;
+width:80px;
+}
+
+.employeeContactInfo{
+  border: solid 1px grey;
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  margin-left: 2.3%;
+  display: flex;
+  flex-direction:row;
+}
+
 
 @keyframes App-logo-spin {
   from {
