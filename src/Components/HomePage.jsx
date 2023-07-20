@@ -6,12 +6,18 @@ import EmployeePage from './EmployeePage'
 import SearchBar from './SearchBar'
 import EmployeeList from './EmployeeList'
 import EmployeeListItem from './EmployeeListItem'
+import employees from '../models/employees';
 
 
 function HomePage(props) {
    return  (
-    <div className="employeeInfor">
-      <h1>{props.employee1.image}</h1>
+    <div className="HomePg">
+      <div className='employee'></div>
+      <div className='employee'></div>
+      <div className='employee'></div>
+      <div className='employee'></div>
+      <div className='employee'></div>
+      <div className='employee'></div>
            
     </div>
   )

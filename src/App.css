@@ -87,6 +87,17 @@ width:80px;
   flex-direction:row;
 }
 
+.allEmployeeCont{
+  border: solid 4px purple;
+  margin: 0.98%;
+}
+.employee{
+  border: solid red 2px;
+  height:68px;
+  width: auto;
+  margin: 0.9%;
+}
+
 
 @keyframes App-logo-spin {
   from {
