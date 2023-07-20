@@ -1,9 +1,10 @@
 import React from 'react'
+import HomePage from './HomePage'
 
 
-function EmployeeDirectory() {
+function EmployeeDirectory(props) {
   return (
-    <div>EmployeeDirectory</div>
+  <h4>Employee Directory</h4>
   )
 }
 

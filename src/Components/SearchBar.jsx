@@ -1,9 +1,9 @@
 import React from 'react'
 
-function SearchBar() {
+function SearchBar(props) {
   return (
     <input type='text'
-    placeholder='Type what you are looking for here'
+    placeholder='Search'
     ></input>
   )
 }

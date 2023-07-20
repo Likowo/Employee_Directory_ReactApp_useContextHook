@@ -1,18 +1,19 @@
 import React from 'react';
 
 // ------------Import child components
-// import EmployeeDirectory from './Components/EmployeeDirectory';
-// import EmployeePage from './Components/EmployeePage'
-// import SearchBar from './Components/ScreenBar'
-// import EmployeeList from './Components/EmployeeList'
-// import EmployeeListItem from './Components/EmployeeListItem'
+import EmployeeDirectory from './EmployeeDirectory';
+import EmployeePage from './EmployeePage'
+import SearchBar from './SearchBar'
+import EmployeeList from './EmployeeList'
+import EmployeeListItem from './EmployeeListItem'
 
 
 function HomePage(props) {
    return  (
     <div className="employeeInfor">
-        
-        HomePage</div>
+      <h1>{props.employee1.image}</h1>
+           
+    </div>
   )
 }
 
