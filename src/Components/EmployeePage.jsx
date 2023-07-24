@@ -1,29 +1,46 @@
-import React from 'react';
+import React from "react";
 // import HeaderEmployee from './Components/HeaderEmployee';
-import employees from '../models/employees';
+import employees from "../models/employees";
 
 function EmployeePage(props) {
   return (
-  <div className='employeePg'>
-      <div className='employeeProfile'>   Employee 
+    <div className="employeePage">
+      <div className="employeeProfile"> Employee</div>
+      <div className="profilePic">
+        <div>
+          <img id="img1" src={employees[1].image} alt="" />
+        </div>
+
+        <div className="profilePicInfo">
+          <p>
+            {" "}
+            Name: <strong>{employees[1].employeename}</strong>{" "}
+          </p>
+          <span>
+            {" "}
+            Position:<b> {employees[1].employeeposition} </b>
+          </span>
+        </div>
       </div>
-    <div className='profilePic'>
-      <div>
-      <img id='img1' src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/73-512.png" alt="" />
+      <div className="employeeContactInfo">
+        {" "}
+        Call Office <br /> {employees[1].employeeofficenumber}{" "}
       </div>
-    
-      <div className='profilePicInfo'>
-        Name: <h4>{employees.employeename}</h4>
-        Position:<h4> {employees.employeeposition} </h4>
+      <div className="employeeContactInfo">
+        {" "}
+        Call Mobile <br /> {employees[1].employeemobilenumber}{" "}
+      </div>
+      <div className="employeeContactInfo">
+        {" "}
+        SMS <br />
+        {employees[1].employeesms}{" "}
+      </div>
+      <div className="employeeContactInfo">
+        {" "}
+        Email <br /> {employees[1].employeeemailenumber}{" "}
       </div>
     </div>
-    <div className='employeeContactInfo'> Call Office <br/> 781-000-0002 </div>
-    <div className='employeeContactInfo'> Call Mobile <br/> 617-000-0002 </div>
-    <div className='employeeContactInfo'> SMS <br/>617-000-0002 </div>
-    <div className='employeeContactInfo'> Email <br/> jtaylor@fakemail.com </div>
-  </div>
-    
   );
 }
 
-export default EmployeePage
+export default EmployeePage;

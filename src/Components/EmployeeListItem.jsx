@@ -1,16 +1,25 @@
-import React from 'react'
-import employees
- from '../models/employees'
- import EmployeeList from './EmployeeList'
+import React from "react";
 
-function EmployeeListItem(props) {
+function EmployeeListItem({ employee }) {
   return (
-    <div className='employeeInfor'>
-          <img className='imgs' src={props.employeeInfor.image}/>
-          <h3>{props.employeeInfor.employeename}</h3>
-          <h3>{props.employeeInfor.employeeposition}</h3>
+    <div className="employeeListItem">
+        <div>
+          <img id="img1" src={employee.image} alt="" />
+        </div>
+
+        <div className="profilePicInfo">
+          <p>
+            {" "}
+            Name: <strong>{employee.employeename}</strong>{" "}
+          </p>
+          <span>
+            {" "}
+            Position:<b> {employee.employeeposition} </b>
+          </span>
+        </div>
+    
     </div>
-  )
+  );
 }
 
-export default EmployeeListItem
+export default EmployeeListItem;

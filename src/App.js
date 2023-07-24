@@ -22,29 +22,35 @@ function App() {
   // // 6: Renders What the User Sees in Real-Time 
     // NB: When you open the App.js, start by Creating the structure of the page within return. In this project I began with a parent div with className, App ; ---> an h1(name of App) and an h2- header( Employee Directory ),--> div for screenbar.
   return (
-    <div className="App">
+    <div className='App'>
+      <HomePage />
+      <EmployeePage />
+    </div>
+    
+  );
+}
+
+export default App;
+//=========================================
+{/* <div className="App">
       <div className='appContainer'>
         <div className='homePage'>    
          < EmployeeDirectory/>
          < SearchBar/>
          {/* < EmployeeListItem/> */}
-  <div className='allEmployeeCont'>
-    <div className="allEmployee">
-      <div className='employee'></div>
-      <div className='employee'></div>
-      <div className='employee'></div>
-      <div className='employee'></div>
-      <div className='employee'></div>
-      <div className='employee'></div>
-    </div>
-  </div>
-      </div>
-        <div className='employeePage'>
-          <EmployeePage/> 
-        </div>
-      </div>           
-    </div>
-  );
-}
-
-export default App;
+  // <div className='allEmployeeCont'>
+  //   <div className="allEmployee">
+  //     <div className='employee'></div>
+  //     <div className='employee'></div>
+  //     <div className='employee'></div>
+  //     <div className='employee'></div>
+  //     <div className='employee'></div>
+  //     <div className='employee'></div>
+  //   </div>
+  // </div>
+  //     </div>
+  //       <div className='employeePage'>
+  //         <EmployeePage/> 
+  //       </div>
+  //     </div>           
+  //   </div> */}

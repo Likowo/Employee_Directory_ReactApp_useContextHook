@@ -1,11 +1,22 @@
-import React from 'react'
+import React from "react";
+import { useContext } from "react";
+import { AppContext } from "../contexts/context";
 
 function SearchBar(props) {
+  const { employeeName, setEmployeeName } = useContext(AppContext);
   return (
-    <input type='text'
-    placeholder='Search'
-    ></input>
-  )
+    <form
+      action=""
+      className="searchbar"
+      onSubmit={() => {
+        let searchtextinput = document.querySelector("#searchtext").value;
+        setEmployeeName(searchtextinput);
+      }}
+    >
+      <input type="text" placeholder="Search" id="searchtext" />
+      <input type="submit" value="submit" />
+    </form>
+  );
 }
 
-export default SearchBar   
+export default SearchBar;

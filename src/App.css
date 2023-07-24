@@ -3,7 +3,9 @@ body{
   width: 80%;
 }
 .App {
+  border: solid 5px black;
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -46,6 +48,19 @@ body{
   border: solid 5px orange ;
   height: auto;
   width: 50%;
+}
+
+.employeeheader{
+  border: solid 3px blue;
+  padding: 2%;
+}
+
+.searchbar{
+  border: solid 2px green;
+}
+
+.empList{
+  border: solid 2px purple;
 }
 
 .employeePage{
@@ -91,11 +106,14 @@ width:80px;
   border: solid 4px purple;
   margin: 0.98%;
 }
-.employee{
+.employeeListItem{
   border: solid red 2px;
-  height:68px;
+  height:fit-content;
   width: auto;
   margin: 0.9%;
+  padding: 1px;
+
+  display: flex;
 }
 
 

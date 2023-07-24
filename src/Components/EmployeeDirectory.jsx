@@ -4,7 +4,7 @@ import HomePage from './HomePage'
 
 function EmployeeDirectory(props) {
   return (
-  <h4>Employee Directory</h4>
+  <h4 className='employeeheader' >Employee Directory</h4>
   )
 }
 
