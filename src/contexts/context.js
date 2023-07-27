@@ -7,7 +7,7 @@ export const AppContext = createContext();
 
 // 3. create context provider - is a function to use context throughout entire app
 const AppContextProvider = (props) => {
-  // 4. Bring in the staes we are making global
+  // 4. Bring in the states we are making global
   const [employeeName,setEmployeeName] = useState("");
   const [employeeData,setEmployeeData] = useState(null);
 
